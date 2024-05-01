@@ -9,9 +9,9 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 from typing import Any
 
-from src.configs.config import DOCUMENT_MODELS, MONGODB_URL
+from src.config.config import DOCUMENT_MODELS, MONGODB_URL
 
-from src.configs.redis_config import redis_config
+from src.config.redis_config import redis_config
 
 
 async def startup(ctx: Any) -> str:
