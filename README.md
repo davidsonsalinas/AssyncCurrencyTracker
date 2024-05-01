@@ -14,23 +14,40 @@ Redis: Redis is used as the message broker and task queue for Arq, facilitating 
 ## **File Structure **
 .
 ├── docker-compose.yml
+
 ├── Dockerfile
+
 ├── requirements.txt
+
 ├── src/
+
 │   ├── configs/
+
 │   │   ├── config.py
+
 │   │   └── redis_config.py
+
 │   ├── jobs/
+
 │   │   ├── controllers/
+
 │   │   │   └── insert_new_value.py
+
 │   │   ├── contracts/
+
 │   │   │   └── implementations/
+
 │   │   │       └── beanie/
+
 │   │   │           └── document.py
+
 │   │   └── daily_currency.py
+
 │   |
 │   └── scheduler.py
-└── tests/
+
+└── tests
+
     └── test.py
 
 ## **Installation **
