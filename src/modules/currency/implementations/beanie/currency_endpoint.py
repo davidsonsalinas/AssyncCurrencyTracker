@@ -11,9 +11,9 @@ from src.modules.currency.implementations.beanie.documents import (
 )
 
 
-class BeanieFakeRepository(CurrencyRepository):
+class BeanieCurrencyRepository(CurrencyRepository):
+    
     async def create(self, data: save_currency) -> currency:  # type: ignore
-
         currency_endpoint = currencyEndpoint(**data.model_dump())  # type: ignore
         response = await currency_endpoint.insert()
         return response
