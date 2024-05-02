@@ -1,4 +1,13 @@
 services:
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfile.app
+    restart: always
+    links:
+      - redis
+    ports:
+      - 8000:8000
   arq:
     build:
       context: .
